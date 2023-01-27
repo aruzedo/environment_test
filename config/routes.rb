@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :books, only: [:index, :new, :edit, :show, :delete]
+  root to: "books#index"
+  resources :books
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
